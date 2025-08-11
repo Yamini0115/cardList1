@@ -1,0 +1,68 @@
+.card {
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  background-color: darkcyan;
+}
+
+.card-grid {
+  margin: 0 auto;
+}
+
+.card-contain {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  background: #e5f7f3;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer; 
+}
+
+.card-contain:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+.car-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  font-size: 22px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e41c06;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+@media (max-width: 992px) {
+  .card-contain {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .scroll-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+}
